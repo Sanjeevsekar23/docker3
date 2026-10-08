@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Department of Computer Science and Engineering information portal" />
+    <title>Computer Science & Engineering Department</title>
+    <style>
+      :root {
+        --navy: #102a43;
+        --blue: #2563eb;
+        --sky: #e0f2fe;
+        --gold: #fbbf24;
+        --text: #1f2937;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+      header {
+        background: var(--navy);
+        color: white;
+        padding: 2rem 1.5rem;
+      }
+      nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+      .brand { font-size: 1.25rem; font-weight: 700; }
+      .badge { color: var(--gold); }
+      main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+      .hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2rem; align-items: center; }
+      .hero h1 { font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.05; margin: 0 0 1rem; }
+      .hero p { font-size: 1.1rem; line-height: 1.7; }
+      .cta { display: inline-block; margin-top: 1rem; padding: 0.9rem 1.4rem; background: var(--blue); color: white; border-radius: 0.5rem; text-decoration: none; font-weight: 700; }
+      .panel { background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 12px 30px rgba(16, 42, 67, 0.12); }
+      .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 3rem 0; }
+      .stat { background: var(--sky); border-radius: 0.75rem; padding: 1.25rem; text-align: center; }
+      .stat strong { display: block; font-size: 1.8rem; color: var(--navy); }
+      section { margin-top: 2.5rem; }
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+      .card { background: white; border-left: 5px solid var(--blue); border-radius: 0.6rem; padding: 1.25rem; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08); }
+      .card h2 { margin-top: 0; color: var(--navy); }
+      footer { background: var(--navy); color: #dbeafe; text-align: center; padding: 1.5rem; }
+      @media (max-width: 760px) { .hero, .grid, .stats { grid-template-columns: 1fr; } nav { align-items: flex-start; gap: 0.75rem; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">College of Engineering <span class="badge">• CSE</span></div>
+        <div>Department Information Portal</div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <p class="badge">EST. 2008 • Innovation • Research • Industry Readiness</p>
+          <h1>Building tomorrow's technology leaders.</h1>
+          <p>The Department of Computer Science and Engineering equips students with strong foundations in software engineering, computing, research, and applied technology.</p>
+          <a class="cta" href="#programs">Explore Programs</a>
+        </div>
+        <div class="panel">
+          <h2>Department Highlights</h2>
+          <p><strong>Head of Department:</strong> Dr. Ananya Rao</p>
+          <p><strong>Programs Offered:</strong> B.Tech, M.Tech, Ph.D.</p>
+          <p><strong>Research Labs:</strong> AI & Data Science, Cybersecurity, Robotics, Cloud Computing</p>
+          <p><strong>Location:</strong> Academic Block A, Room 204</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong>12+</strong> Research groups</div>
+        <div class="stat"><strong>1,800+</strong> Active students</div>
+        <div class="stat"><strong>96%</strong> Placement rate</div>
+      </div>
+
+      <section id="programs">
+        <h2>Academic Programs</h2>
+        <div class="grid">
+          <article class="card">
+            <h2>B.Tech in Computer Science</h2>
+            <p>Industry-aligned curriculum with software engineering, algorithms, operating systems, networking, and machine learning.</p>
+          </article>
+          <article class="card">
+            <h2>M.Tech in Software Engineering</h2>
+            <p>Advanced study focused on scalable systems, secure development, architecture, and research methodology.</p>
+          </article>
+          <article class="card">
+            <h2>Ph.D. in Computing</h2>
+            <p>Research opportunities in AI, cloud systems, cybersecurity, and emerging digital technologies.</p>
+          </article>
+          <article class="card">
+            <h2>Industry Collaborations</h2>
+            <p>Hands-on learning through internships, capstone projects, coding competitions, and faculty-guided innovation labs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Laboratories & Facilities</h2>
+        <div class="grid">
+          <article class="card"><h2>AI & Data Science Lab</h2><p>High-performance workstations and GPU-enabled environments for analytics and intelligent systems.</p></article>
+          <article class="card"><h2>Cybersecurity Lab</h2><p>Network simulation, ethical hacking, forensic analysis, and secure software engineering tools.</p></article>
+          <article class="card"><h2>Robotics Lab</h2><p>Embedded systems, computer vision, automation, and prototype development platforms.</p></article>
+          <article class="card"><h2>Cloud Computing Lab</h2><p>Virtualized infrastructure for containerization, DevOps, distributed systems, and experimentation.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact Information</h2>
+        <div class="panel">
+          <p><strong>Department:</strong> Computer Science and Engineering</p>
+          <p><strong>Office:</strong> Academic Block A, Floor 2</p>
+          <p><strong>Email:</strong> cse@college.edu</p>
+          <p><strong>Phone:</strong> +1 (555) 012-3456</p>
+          <p><strong>Office Hours:</strong> Monday to Friday, 9:00 AM to 5:00 PM</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>College of Engineering • Department of Computer Science and Engineering</p>
+      <p>Last updated: October 2026</p>
+    </footer>
+  </body>
+</html>
