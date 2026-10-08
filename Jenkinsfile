@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush()
+    }
+
     environment {
         IMAGE_NAME = 'sanjeevsekar23/college-department-portal'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
